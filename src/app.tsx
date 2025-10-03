@@ -334,17 +334,6 @@ ${Object.keys(animeData)
                   {t("copy")}
                 </button>
 
-                <button
-                  type="button"
-                  className="text-sm text-zinc-500 hover:bg-zinc-100 px-1.5 h-7 flex items-center rounded-md"
-                  onClick={() => {
-                    location.href = `chatwise://chat?input=${encodeURIComponent(
-                      prompt
-                    )}`
-                  }}
-                >
-                  {t("openInChatWise")}
-                </button>
               </div>
             </div>
             <textarea
@@ -392,18 +381,7 @@ ${Object.keys(animeData)
           </div>
         )}
 
-        <div className="text-center">
-          {t("otherProducts")}
-          <a
-            href="https://chatwise.app"
-            target="_blank"
-            className="underline inline-flex items-center gap-1"
-          >
-            <img src="https://chatwise.app/favicon.png" className="size-4" />{" "}
-            ChatWise
-          </a>
-          {t("aiChatClient")}
-        </div>
+
       </div>
     </>
   )
